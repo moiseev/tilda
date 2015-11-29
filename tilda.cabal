@@ -1,0 +1,24 @@
+name:                tilda
+version:             0.1.0.0
+synopsis:            Simple project template from stack
+description:         Please see README.md
+homepage:            http://github.com/githubuser/tilda#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Maxim Moiseev
+maintainer:          maxim.moiseev@gmail.com
+copyright:           2015 Maxim Moiseev
+category:            Tools
+build-type:          Simple
+cabal-version:       >=1.10
+
+executable tilda
+  hs-source-dirs:      src
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5 
+                     , fsnotify >= 0.2.1
+                     , cmdargs >= 0.10.13
+                     , system-filepath >= 0.4.7
+                     , turtle >= 1.2.2
+                     , text >= 1.2.1
